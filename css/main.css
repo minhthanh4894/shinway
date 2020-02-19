@@ -321,7 +321,7 @@ img {
     top: 0;
     left: 0;
     flex-direction: column;
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
     background: var(--blue-color);
     z-index: 3000;
