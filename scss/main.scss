@@ -333,6 +333,10 @@ img {
     cursor: pointer;
     text-align: center;
     margin-top: 2rem;
+    display: none;
+    @include max_767 {
+      display: block;
+    }
   }
   @include max_767 {
     padding: 0;

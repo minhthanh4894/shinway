@@ -354,6 +354,12 @@ img {
   cursor: pointer;
   text-align: center;
   margin-top: 2rem;
+  display: none;
+}
+@media screen and (max-width : 767px) {
+  .nav__close {
+    display: block;
+  }
 }
 @media screen and (max-width : 767px) {
   .nav {
