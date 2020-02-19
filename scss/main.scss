@@ -36,6 +36,11 @@ $max_374: "screen and (max-width : 374px)";
 *:after {
   box-sizing: border-box;
 }
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -321,6 +326,13 @@ img {
     @include max_767 {
       display: block;
     }
+  }
+  &__close {
+    font-size: 5rem;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
   }
   @include max_767 {
     padding: 0;

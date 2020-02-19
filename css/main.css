@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -342,6 +347,13 @@ img {
   .nav__icon {
     display: block;
   }
+}
+.nav__close {
+  font-size: 5rem;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2rem;
 }
 @media screen and (max-width : 767px) {
   .nav {

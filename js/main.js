@@ -228,9 +228,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // XỬ LÝ NÚT ICON MENU KHI RESPONSIVE
   var menuIcon = document.querySelector('.nav__icon');
-  var menuBar = document.querySelector('.nav__bar')
+  var menuBar = document.querySelector('.nav__bar');
+  var closeBtn = document.querySelector('.nav__close');
   menuIcon.addEventListener("click", () => {
     menuBar.classList.toggle("nav-show");
+  })
+  closeBtn.addEventListener("click", () => {
+    menuBar.classList.remove("nav-show");
   })
   // END XỬ LÝ NÚT ICON MENU KHI RESPONSIVE
 });
