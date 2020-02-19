@@ -1,0 +1,29 @@
+Cắt hình trong layer
+--> move tools (v) --> tick auto select (chọn layer) --> bấm vào hình cần chọn -->Alt + click vào biểu tượng "mắt" kế layer đã chọn (để hiện 1 layer đó) -->
+
+*Phân tích layout:
+-vô T trong photoshop: xem font chữ
+-xem các màu chữ trong file psd
+-xem icon
+-xem màu chữ
+
+*Cài sass trong terminal vscode
+-Vô terminal gõ code: sass ./scss/main.scss ./css/main.css --watch
+*Trước tiên phải reset css
+-tạo file reset.css --> search google reset css rồi copy code vô file reset.css --> link reset.css vô index.htm
+// Xem cách dùng rem và em
+-Vô file main.scss tạo biến
+   :root {
+	--tên_biến: giá trị; (màu sắc chủ đạo, màu sắc chữ, kích thuớc, font chữ,..)
+	--wrapper: 1920px;
+    	--container: 1200px;
+	 --primary-font: 'Roboto', sans-serif;
+   	--secondary-font:'Montserrat', sans-serif;
+    	--third-font:'Kaushan Script', cursive;
+    	--primary-color: #f38181;
+    	--secondary-color: #95e1d3;
+    	--third-color: #fce38a;
+    	--gray-dark: #333;
+    	--gray-light: #999;
+}
+

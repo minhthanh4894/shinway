@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- import bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- import google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- import font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+  <!-- import reset css file from css/reset.css -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <!-- import main css file from css/main.css -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- import animated css file from css/animated.css -->
+  <link rel="stylesheet" href="./css/animated.css" />
+  <title>SHINWAY</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- HEADER -->
+    <header id="gotop" class="header">
+      <div class="container">
+        <div class="header__main fadeInScale" data-animated-delay="0.3s">
+          <h1>we are <span class="blue-color">shinway</span></h1>
+          <h2>outsource company</h2>
+          <p>Được thành lập từ những ý tưởng độc đáo, sáng tạo với mong muốn tạo nên một sự khác biệt trong ngành công
+            nghệ ở Việt Nam, Shinway cung cấp dịch vụ theo một cách thức hoàn toàn mới, với chất lượng hàng đầu và giá
+            cả
+            hợp lý, phù hợp với mọi nhu cầu và ngân sách của khách hàng.</p>
+          <div class="d-flex">
+            <a href="#" class="btn btn--outline bounceInLeft2" data-animated-delay="1.2s">Xem Thêm</a>
+            <a href="#" class="btn btn--outline bounceInRight2" data-animated-delay="1.2s">Liên Hệ</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- NAV -->
+    <div class="nav">
+      <div class="container d-flex nav-flex">
+        <a href="index.html"><img src="images/logo.png" alt="" class="nav__logo"></a>
+        <ul class="nav__bar">
+          <img src="images/logo.png" class="mini-logo">
+          <li><a href="#service">Dịch vụ</a></li>
+          <li><a href="#introduce">Giới thiệu</a></li>
+          <li><a href="#project">Dự án</a></li>
+          <li><a href="#process">Quy trình</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+          <li>
+            <!-- content -->
+            <select id="id_select2_example">
+              <option data-img_src="images/vietnam-flag.gif">Vi</option>
+              <option data-img_src="images/UK-flag.gif">Eng</option>
+            </select>
+            <!-- /content -->
+          </li>
+        </ul>
+        <div class="nav__icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- WHAT WE DO -->
+    <div class="wedo" id="service">
+      <div class="container">
+        <!-- Phần heading dùng lại nhiều lần -->
+        <div class="heading">
+          <h2 class="heading__title fadeIn" data-animated-delay="0.1s">Chúng tôi làm gì?</h2>
+        </div>
+        <!-- Phần heading dùng lại nhiều lần -->
+        <div class="wedo__group">
+          <div class="wedo__item fadeInUp" data-animated-delay="0.1s">
+            <div class="wedo__icon"><i class="fas fa-cube"></i></div>
+            <div class="wedo__item-content">
+              <h4>Nghiên cứu & phát triển phần mềm</h4>
+              <p>Chúng tôi có thể đóng vai trò riêng lẻ hoặc hợp tác để lên ý tưởng cho những giải pháp giải quyết vấn
+                đề công việc và cuộc sống và lập kế hoạch phát triển phần mềm cho ý tưởng đó.</p>
+            </div>
+          </div>
+          <div class="wedo__item fadeInUp" data-animated-delay="0.1s">
+            <div class="wedo__icon"><i class="fas fa-wrench"></i></div>
+            <div class="wedo__item-content">
+              <h4>Bảo trì phần mềm</h4>
+              <p>Điều chỉnh các lỗi mà chưa được phát hiện trong các giai đoạn trước của chu kỳ của một phần mềm, nâng
+                cấp tính năng sử dụng và an toàn vận hành của phần mềm.</p>
+            </div>
+          </div>
+          <div class="wedo__item fadeInUp" data-animated-delay="0.1s">
+            <div class="wedo__icon"><i class="fas fa-pen"></i></div>
+            <div class="wedo__item-content">
+              <h4>Thiết kế Website (Responsive)</h4>
+              <p>Không chỉ thiết kế giao diện và chúng tôi còn tạo ra cả phương thức giao tiếp tương tác trực quan giữa
+                người dùng với máy tính, website bằng hiệu ứng, hình ảnh, chữ viết.</p>
+            </div>
+          </div>
+          <div class="wedo__item fadeInUp" data-animated-delay="0.1s">
+            <div class="wedo__icon"><i class="far fa-check-square"></i></div>
+            <div class="wedo__item-content">
+              <h4>Kiểm thử phần mềm</h4>
+              <p>Cung cấp cho doanh nghiệp một quan điểm, một cách nhìn độc lập về phần mềm để từ đó cho phép đánh giá
+                và thấu hiểu được những rủi ro trong quá trình triển khai phần mềm.</p>
+            </div>
+          </div>
+          <div class="wedo__item fadeInUp" data-animated-delay="0.1s">
+            <div class="wedo__icon"><i class="fas fa-cog"></i></div>
+            <div class="wedo__item-content">
+              <h4>Tùy chỉnh & tích hợp</h4>
+              <p>Thực hiện công tác tích hợp khác để tạo ra một giải pháp tùy chỉnh cho doanh nghiệp của bạn như tùy
+                chỉnh mẫu, báo cáo, giao diện và cơ sở dữ liệu để phù hợp với các công cụ phát triển & giải pháp của
+                bạn. </p>
+            </div>
+          </div>
+          <div class="wedo__item fadeInUp" data-animated-delay="0.1s">
+            <div class="wedo__icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="wedo__item-content">
+              <h4>Phát triển ứng dụng trên thiết bị thông minh</h4>
+              <p>Với sự phát triển cách mạng của các thiết bị thông minh vào đời sống hằng ngày của con người, chúng tôi
+                cũng thúc đẩy phát triển các ứng dụng di động phục vụ nhu cầu học tập, giải trí, làm việc...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END WHAT WE DO -->
+
+    <!-- PARTNER TALK -->
+    <div class="partner">
+      <div class="container">
+        <div class="partner__carousel">
+          <div class="slidebtn prev-btn"><i class="fas fa-chevron-left"></i></div>
+          <div class="partner__wrapper">
+            <div class="partner__group">
+              <div class="partner__item">
+                <i class="fas fa-quote-right"></i>
+                <h3>Shinway là đối tác tin cậy outsource của chúng tôi từ nhiều năm nay. Tôi hoàn toàn tin tưởng vào khả
+                  năng kỹ thuật & quản lý của đội ngũ Shinway.</h3>
+                <p>Ông Imai Ichikuro - General Manager</p>
+              </div>
+              <div class="partner__item">
+                <i class="fas fa-quote-right"></i>
+                <h3>Shinway hỗ trợ tôi rất nhiều dù tôi không biết gì về kỹ thuật nhưng cũng đã có thể quản trị website
+                  để
+                  giảng dạy cho học sinh của mình</h3>
+                <p>Bà Nguyễn Hải Yến - Giáo viên</p>
+              </div>
+              <div class="partner__item">
+                <i class="fas fa-quote-right"></i>
+                <h3>Không chỉ là nơi lấy yêu cầu và thực hiện ý tưởng, Shinway còn đóng vai trò tư vấn như là 1 đối tác
+                  kinh doanh giúp việc vận hành hệ thống tốt hơn.</h3>
+                <p>Ông Nakamura - CEO</p>
+              </div>
+              <div class="partner__item">
+                <i class="fas fa-quote-right"></i>
+                <h3>Shinway là nơi tốt nhất để trọn mặt gửi vàng cho việc quảng bá thương hiệu của bạn lên thế giới
+                  internet.</h3>
+                <p>Bà Trương Ngọc Liên - Quản lý Marketting</p>
+              </div>
+              <div class="partner__item">
+                <i class="fas fa-quote-right"></i>
+                <h3>Shinway có một đội ngũ nhân viên rất chuyên nghiệp. Tôi rất vui khi được làm việc cùng các bạn!</h3>
+                <p>Ông Nguyễn Văn Kiệt - CTO</p>
+              </div>
+            </div>
+          </div>
+          <div class="slidebtn next-btn"><i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END PARTNER TALK -->
+
+    <!-- WHY CHOOSE -->
+    <div class="choose" id="introduce">
+      <div class="container">
+        <!-- Phần heading dùng lại nhiều lần -->
+        <div class="heading">
+          <h2 class="heading__title fadeIn" data-animated-delay="0.1s">
+            tại sao bạn chọn <span class="blue-color">shinway</span>
+          </h2>
+          <p class="heading__text fadeIn" data-animated-delay="0.1s">Shinway cung cấp đến quý khách hàng những dịch vụ
+            đa
+            dạng và chuyên nghiệp,đáp ứng
+            mọi nhu cầu về sản phẩm và giá cả của khách hàng mà vẫn đảm bảo được chất lượng tốt nhất.</p>
+        </div>
+        <!-- Phần heading dùng lại nhiều lần -->
+        <div class="choose__group">
+          <div class="choose__item fadeInUp" data-animated-delay="0.3s">
+            <i class="far fa-lightbulb"></i>
+            <h4 class="blue-color">Sáng Tạo</h4>
+            <p>Sứ mệnh của Shinway là làm thay đổi cuộc sống bằng giải pháp công nghệ, sáng tạo dựa trên nền tảng công
+              nghệ tiên tiến nhất, phát triển những sản phẩm và dịch vụ công nghệ thông tin mang lại nhiều giá trị cho
+              người dùng, làm cho cuộc sống trở nên hiện đại và tiện lợi hơn.</p>
+          </div>
+          <div class="choose__item fadeInUp" data-animated-delay="0.6s">
+            <i class="fa fa-globe"></i>
+            <h4 class="blue-color">Quốc tế</h4>
+            <p>Shinway cung cấp dịch vụ phát triển phần mềm với tiêu chuẩn quốc tế và đã triển khai thành công các dự án
+              phát triển phần mềm phức tạp, theo từng yêu cầu riêng biệt cho các doanh nghiệp, tổ chức trong nước và
+              quốc tế như: Nhật Bản, Mỹ, Anh, Úc…</p>
+          </div>
+          <div class="choose__item fadeInUp" data-animated-delay="0.9s">
+            <i class="fa fa-heart"></i>
+            <h4 class="blue-color">Đam mê</h4>
+            <p>Đội ngũ nhân viên của công ty Shinway là những nhà quản lý, điều hành nhiều kinh nghiệm, các kỹ sư,
+              chuyên viên thiết kế tài năng đam mê và yêu nghề. Tất cả tạo nên một Shinway phát triển mạnh mẽ tại thị
+              trường Việt Nam trong thời gian sắp tới.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END WHY CHOOSE -->
+
+    <!-- SKILL -->
+    <div class="skill">
+      <div class="container">
+        <div class="skill__bg">
+          <h2>Các nghiệp vụ chính những dự án Shin way từng đảm nhiệm</h2>
+          <img class="img1" src="images/skill.png" alt="">
+          <img class="img2" src="images/chart(1).png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- END SKILL -->
+
+    <!-- PRODUCT -->
+    <div class="product" id="project">
+      <div class="container">
+        <!-- Phần heading dùng lại nhiều lần -->
+        <div class="heading">
+          <h2 class="heading__title fadeIn" data-animated-delay="0.1s">
+            các dự án đã thực hiện
+          </h2>
+        </div>
+        <!-- Phần heading dùng lại nhiều lần -->
+        <div class="product__menu fadeIn" data-animated-delay="0.1s">
+          <ul>
+            <li class="active" data-filter="all">Tất Cả</li>
+            <li data-filter="web">Thiết Kế Website</li>
+            <li data-filter="app">Ứng Dụng</li>
+            <li data-filter="soft">Phần Mềm</li>
+          </ul>
+        </div>
+        <div class="product__main">
+          <ul>
+            <li class="product__item" data-filter="soft">
+              <img src="images/tit_BigData.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Big Data</h3>
+                <p>Phần Mềm</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="web">
+              <img src="images/tit_HealthPluss.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Health Plus</h3>
+                <p>Thiết kế website (responsive)</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="soft">
+              <img src="images/tit_Elearning.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>E learning</h3>
+                <p>Phần Mềm</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="app">
+              <img src="images/tit_DontShoot.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Don't Shoot</h3>
+                <p>Ứng Dụng</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="web">
+              <img src="images/tit_MTek.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>MTek</h3>
+                <p>Thiết kế website (responsive)</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="soft">
+              <img src="images/tit_medicalsystem.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Medical System</h3>
+                <p>Phần Mềm</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="soft">
+              <img src="images/tit_CRM.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>CRM</h3>
+                <p>Phần Mềm</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="app">
+              <img src="images/tit_SlidePuzz.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Sliding Puzzle</h3>
+                <p>Ứng Dụng</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="soft">
+              <img src="images/tit_cardonline.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Card onLine</h3>
+                <p>Phần Mềm</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="app">
+              <img src="images/tit_Build.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Build Street</h3>
+                <p>Ứng Dụng</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="app">
+              <img src="images/tit_DoVuiDanGian.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Đố Vui Dân Gian</h3>
+                <p>Ứng Dụng</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="web">
+              <img src="images/tit_Bignews.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Big News</h3>
+                <p>Thiết kế website (responsive)</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="app">
+              <img src="images/tit_Supper.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Super Falling Ball</h3>
+                <p>Ứng Dụng</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="web">
+              <img src="images/tit_Odin.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Odin</h3>
+                <p>Thiết kế website (responsive)</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="product__item" data-filter="soft">
+              <img src="images/tit_Ecomerce.jpg" alt="">
+              <div class="product__item-hover">
+                <h3>Ecommerce</h3>
+                <p>Phần Mềm</p>
+                <i class="fas fa-ellipsis-h"></i>
+                <a class="btn btn--outline-white dataModal">Xem Thêm</a>
+                <a class="icon-zoom">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="product__modal">
+          <div class="product__modal-wrapper">
+            <div class="product__modal-main">
+              <div class="product__modal-content">
+                <div class="modal__img" data-Modal="0">
+                  <img src="images/BigData.jpg" alt="">
+                </div>
+                <div class="modal__img" data-Modal="1">
+                  <img src="images/HealthPluss.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-demo.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="2">
+                  <img src="images/Elearning.jpg" alt="">
+                </div>
+                <div class="modal__img" data-Modal="3">
+                  <img src="images/DontShoot.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-apple.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="4">
+                  <img src="images/MTek.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-demo.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="5">
+                  <img src="images/medicalsystem.jpg" alt="">
+                </div>
+                <div class="modal__img" data-Modal="6">
+                  <img src="images/CRM.jpg" alt="">
+                </div>
+                <div class="modal__img" data-Modal="7">
+                  <img src="images/SlidePuzz.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-apple.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="8">
+                  <img src="images/cardonline.jpg" alt="">
+                </div>
+                <div class="modal__img" data-Modal="9">
+                  <img src="images/Build.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-apple.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="10">
+                  <img src="images/DoVuiDanGian.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-google.png" alt=""></a>
+                    <a><img src="images/btn-demo.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="11">
+                  <img src="images/Bignews.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-demo.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="12">
+                  <img src="images/Supper.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-apple.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="13">
+                  <img src="images/Odin.jpg" alt="">
+                  <div class="modal__btn">
+                    <a><img src="images/btn-demo.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="modal__img" data-Modal="14">
+                  <img src="images/Ecomerce.jpg" alt="">
+                </div>
+              </div>
+              <div class="product__modal-control">
+                <span class="control left"><i class="fas fa-chevron-left"></i></span>
+                <span class="control right"><i class="fas fa-chevron-right"></i></span>
+              </div>
+            </div>
+            <div class="clone"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END PRODUCT -->
+
+    <!-- STATISTIC -->
+    <div class="statistic">
+      <div class="container">
+        <div class="statistic__main">
+          <!-- Phần heading dùng lại nhiều lần -->
+          <div class="heading">
+            <h2 class="heading__title white-color fadeIn">
+              thống kê
+            </h2>
+            <p class="heading__text white-color fadeIn">Sự thành công của <span class="blue-color">SHINWAY</span> qua
+              những con
+              số</p>
+          </div>
+          <!-- Phần heading dùng lại nhiều lần -->
+          <div class="statistic__group fadeInScale2">
+            <div class="statistic__item">
+              <i class="fas fa-users blue-color"></i>
+              <span class="white-color">39</span>
+              <p class="blue-color">Nhân viên</p>
+            </div>
+            <div class="statistic__item">
+              <i class="fas fa-tags blue-color"></i>
+              <span class="white-color">56</span>
+              <p class="blue-color">Dự án</p>
+            </div>
+            <div class="statistic__item">
+              <i class="fas fa-globe blue-color"></i>
+              <span class="white-color">2000</span>
+              <p class="blue-color">Khách hàng</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END STATISTIC -->
+
+    <!-- PROCESS -->
+    <div class="process" id="process">
+      <div class="container">
+        <!-- Phần heading dùng lại nhiều lần -->
+        <div class="heading">
+          <h2 class="heading__title fadeIn" data-animated-delay="0.1s">
+            quy trình làm việc của <span class="blue-color">shinway</span>
+          </h2>
+        </div>
+        <!-- Phần heading dùng lại nhiều lần -->
+        <div class="process__main">
+          <ul class="fadeInDownBig" data-animated-delay="0.1s">
+            <li class="fadeInDown" data-animated-delay="0.6s">
+              <div class="process__timeline-icon">
+                <i class="far fa-lightbulb"></i>
+              </div>
+              <div class="process__timeline-content">
+                <h4 class="process__timeline-title">Lấy yêu cầu, lên ý tưởng</h4>
+                <p class="process__timeline-text">Gặp khách hàng, tìm hiểu yêu cầu thực tế. Xác nhận yêu cầu, trao đổi,
+                  tư vấn & lên ý tưởng.</p>
+              </div>
+            </li>
+            <li class="fadeInDown" data-animated-delay="1s">
+              <div class="process__timeline-icon">
+                <i class="far fa-list-alt"></i>
+              </div>
+              <div class="process__timeline-content">
+                <h4 class="process__timeline-title">Lên kế hoạch</h4>
+                <p class="process__timeline-text">Phân tích nghiệp vụ, yêu cầu, mục đích của khách hàng & lên kế hoạch
+                  thực hiện dự án.</p>
+              </div>
+            </li>
+            <li class="fadeInDown" data-animated-delay="1.4s">
+              <div class="process__timeline-icon">
+                <i class="far fa-edit"></i>
+              </div>
+              <div class="process__timeline-content">
+                <h4 class="process__timeline-title">Gửi bản phát thảo</h4>
+                <p class="process__timeline-text">Xem xét chi tiết & phát thảo giao diện, mô hình hoạt động của dự án...
+                </p>
+              </div>
+            </li>
+            <li class="fadeInDown" data-animated-delay="1.8s">
+              <div class="process__timeline-icon">
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="process__timeline-content">
+                <h4 class="process__timeline-title">Thiết kế</h4>
+                <p class="process__timeline-text">Bao gồm thiết kế về giao diện, cơ sở dữ liệu, cấu trúc, hoạt động
+                  nghiệp vụ, di chuyển màn hình...</p>
+              </div>
+            </li>
+            <li class="fadeInDown" data-animated-delay="2.2s">
+              <div class="process__timeline-icon">
+                <i class="fas fa-wave-square"></i>
+              </div>
+              <div class="process__timeline-content">
+                <h4 class="process__timeline-title">Phát triển</h4>
+                <p class="process__timeline-text">Tiến hành công đoạn phát triển Tích hợp hệ thống, kết hợp thiết kế và
+                  lập trình và biến yêu cầu của khách hàng thành sản phẩm cụ thể. Chạy thử, kiểm tra & sửa lỗi (nếu có)
+                  đảm bảo 1 sản phẩm hoàn thiện không có sai xót thiết kế và hoạt động hiệu quả</p>
+              </div>
+            </li>
+            <li class="fadeInDown" data-animated-delay="2.6s">
+              <div class="process__timeline-icon">
+                <i class="far fa-paper-plane"></i>
+              </div>
+              <div class="process__timeline-content">
+                <h4 class="process__timeline-title">Giao sản phẩm</h4>
+                <p class="process__timeline-text">Bàn giao sản phẩm cuối cùng cho khách hàng.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END PROCESS -->
+
+    <!-- GOOGLE MAP -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4610851129387!2d106.6899959!3d10.775953999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3b1dc932a7%3A0xf098e6a7fc854987!2zMTE1IFbDtSBWxINuIFThuqduLCBwaMaw4budbmcgNiwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1432779344650"></iframe>
+    </div>
+    <!-- END GOOGLE MAP -->
+
+    <!-- BRAND LOGO -->
+    <div class="brand">
+      <div class="container">
+        <div class="brand__wrapper">
+          <div class="brand__list">
+            <div class="brand__item">
+              <img src="images/PHP_Logo2.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/html5.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/CSS3.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/LESS.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/SASS.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/JQuery_logo_color_onwhite.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/bootstrap2_logo.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/AngularJS_logo.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/ios.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/android_logo-1.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/java-logo-transparent.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/logo_asp.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/MongoDB_Logo.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/logo-postgresql.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/Oracle.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/GitHub_logo.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/TortoiseSVN_logo.svg.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/Microsoft-Windows-8-logo.png" alt="">
+            </div>
+            <div class="brand__item">
+              <img src="images/Linux.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END BRAND LOGO -->
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+      <div class="container contact__main">
+        <div class="col6 bounceInLeft" data-animated-delay="0.5s">
+          <div class="contact__info">
+            <h2>công ty tnhh phát triển phần mềm <span class="blue-color">shinway</span></h2>
+            <p>Hãy liên hệ ngay với chúng tôi để được tư vấn dịch vụ tốt nhất cũng như giải đáp nhanh chóng mọi thắc mắc
+              của quý khách. Chúng tôi muốn mong đợi những ý kiến đóng góp để dịch vụ có thể hoàn thiện và phục vụ tốt
+              hơn
+              mọi nhu cầu cho quý khách hàng.</p>
+            <div class="contact__info-address">
+              <div class="contact__info-item">
+                <i class="fas fa-home"></i>
+                <p>
+                  Lầu 5 Tòa nhà Minh Tịnh <br>
+                  115 Võ Văn Tần, Phường 6, Quận 3, TP.Hồ Chí Mính, Việt Nam.
+                </p>
+              </div>
+              <div class="contact__info-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>(+84) 839 309 984</p>
+              </div>
+              <div class="contact__info-item">
+                <i class="fas fa-globe"></i>
+                <p>http://shinway.vn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col6 bounceInRight" data-animated-delay="0.5s">
+          <form action="" class="contact__form">
+            <input type="text" id="name" placeholder="Tên">
+            <input type="text" id="email" placeholder="Email">
+            <textarea name="content" id="content" placeholder="Lời Nhắn""></textarea>
+          <button type=" submit">Gửi</button>
+        </form>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="gotop">
+        <a href="#gotop"><i class="fas fa-angle-double-up"></i></a>
+      </div>
+      <p>Copyright 2015 @ <span class="blue-color">Shinway</span>  | All Rights Reserved</p>
+    </footer>
+    <!-- END FOOTER -->
+
+  </div>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/animated.js"></script>
+</body>
+
+</html>
