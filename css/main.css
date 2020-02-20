@@ -617,6 +617,7 @@ img {
 }
 .product__menu {
   padding: 3rem 0 1rem;
+  opacity: 0;
 }
 .product__menu ul {
   display: flex;
@@ -874,6 +875,7 @@ img {
 .statistic__group {
   display: flex;
   margin-top: 2rem;
+  opacity: 0;
 }
 .statistic__item {
   width: calc(100% / 3);
@@ -920,6 +922,7 @@ img {
   margin-top: 7rem;
 }
 .process__main ul {
+  opacity: 0;
   position: relative;
 }
 .process__main ul::before {

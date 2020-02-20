@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var nextImg = document.querySelector(".control.right");
   // console.log(srcImg);
   modalClone.addEventListener("click", () => {
-    // Bấm cùng ngoài tắt modal
+    // Bấm vùng ngoài tắt modal
     // console.log(modalClone)
     productModal.classList.remove("d-block");
     navbar.classList.remove("d-none");
@@ -191,6 +191,16 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       productModal.classList.add("d-block");
       modalImg[i].classList.add("d-block");
+      if (i==modalImg.length-1) {
+        prevImg.classList.remove("d-none");
+        nextImg.classList.add('d-none');
+      } else if (i==0) {
+        nextImg.classList.remove("d-none");
+        prevImg.classList.add('d-none');
+      } else {
+          nextImg.classList.remove("d-none");
+          prevImg.classList.remove("d-none");
+      }
     });
   }
   // END Xử lý click nút Xem thêm sẽ mở lên hình tương ứng
@@ -202,12 +212,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // console.log("active:" + i);
     if (i < modalImg.length - 1) {
       for (let k = 0; k < modalImg.length; k++) {
+        prevImg.classList.remove("d-none");
         modalImg[k].classList.remove("d-block");
       }
       i++;
       modalImg[i].classList.add("d-block");
       // console.log(i);
-    }
+    } 
+    // ẩn nút next khi cuối slide
+    if (i==modalImg.length-1) {
+      prevImg.classList.remove("d-none");
+      nextImg.classList.add('d-none');
+    } 
   });
   prevImg.addEventListener("click", () => {
     var activeModal = document.querySelector(".modal__img.d-block");
@@ -221,20 +237,25 @@ document.addEventListener("DOMContentLoaded", function() {
       modalImg[i].classList.add("d-block");
       // console.log(i);
     }
+    // ẩn nút prev khi đầu slide
+    if (i==0) {
+      prevImg.classList.add("d-none");
+      nextImg.classList.remove('d-none');
+    }
   });
   // END Xử lý nút Next và nút Prev
 
   // END XỬ LÝ PHẦN MODAL PRODUCT
 
   // XỬ LÝ NÚT ICON MENU KHI RESPONSIVE
-  var menuIcon = document.querySelector('.nav__icon');
-  var menuBar = document.querySelector('.nav__bar');
-  var closeBtn = document.querySelector('.nav__close');
+  var menuIcon = document.querySelector(".nav__icon");
+  var menuBar = document.querySelector(".nav__bar");
+  var closeBtn = document.querySelector(".nav__close");
   menuIcon.addEventListener("click", () => {
     menuBar.classList.toggle("nav-show");
-  })
+  });
   closeBtn.addEventListener("click", () => {
     menuBar.classList.remove("nav-show");
-  })
+  });
   // END XỬ LÝ NÚT ICON MENU KHI RESPONSIVE
 });
