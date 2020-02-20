@@ -1246,7 +1246,7 @@
   -moz-animation-name: fadeInDown;
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -1467,6 +1467,7 @@
   -moz-animation-name: fadeInDownBig;
   -o-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fadeInLeftBig {
