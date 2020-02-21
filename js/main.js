@@ -257,7 +257,9 @@ document.addEventListener("DOMContentLoaded", function() {
     menuBar.classList.toggle("nav-show");
   });
   closeBtn.addEventListener("click", () => {
-    menuBar.classList.remove("nav-show");
+    var pos_fixed = document.querySelector(".pos-fixed");
+    pos_fixed.classList.remove("opacity-1"); // Xóa class opacity-1 để ko xung khắc với cái toggle nút menu
+    menuBar.classList.remove("nav-show"); // Xóa class nav-show cho thanh menu đi vô trong
   });
   // Đoạn dưới xử lý sự kiện khi scroll quá thanh menu thì nút icon menu sẽ fixed tại vị trí pos-fixed để ng dùng dễ bấm ,nút icon menu (position fixed) có opacity là 0.5, khi click vào đổi thành opacity 1
   window.addEventListener("scroll", () => {
