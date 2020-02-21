@@ -220,11 +220,6 @@ img {
     font-size: 1.4rem;
   }
 }
-@media screen and (max-width : 767px) {
-  .header {
-    background-attachment: initial;
-  }
-}
 
 @keyframes animatedBackground {
   0% {

@@ -213,9 +213,6 @@ img {
       }
     }
   }
-  @include max_767 {
-    background-attachment: initial;
-  }
 }
 @keyframes animatedBackground {
   0% {
