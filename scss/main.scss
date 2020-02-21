@@ -98,6 +98,16 @@ img {
   visibility: hidden;
   opacity: 0;
 }
+.pos-fixed {
+  // class này để fixed cái icon menu khi responsive
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0.5;
+}
+.opacity-1 {
+  opacity: 1 !important;
+}
 .col6 {
   width: 50%;
   padding: 0 1.5rem;
@@ -231,6 +241,9 @@ img {
 .nav-small {
   padding: 0.2rem 0 !important;
   z-index: 3000;
+  position: fixed;
+  width: 100%;
+  top: 0;
   ul li a {
     font-size: 1.5rem !important;
     @include max_767 {
@@ -258,8 +271,6 @@ img {
   background-color: #f8f8f8;
   border: 1px solid #e7e7e7;
   padding: 2rem 0;
-  position: sticky;
-  top: 0;
   .nav-flex {
     justify-content: space-between;
     align-items: center;

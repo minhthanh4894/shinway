@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
   // console.log(navbtn);
   var flag = "f";
   window.addEventListener("scroll", () => {
-    // add class menu-small
-    if (window.pageYOffset >= navbar.offsetTop) {
+    // console.log(flag);
+    // add class menu-small (Ta dùng service.offsetTop chứ ko dùng navbar.offsetTop bởi vì khi add class nav-small, nav sẽ dính trên top:0 thì điều kiện window.pageYOffset luôn lớn hơn nav.offsetTop dẫn đến ko remove class nav-small đc)
+    if (window.pageYOffset >= service.offsetTop - 100) {
       if (flag == "f") {
         navbar.classList.add("nav-small");
         flag = "t";
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     // END Add class nav-active khi scroll đến vị trí ứng với menu
   });
-  // XỬ LÝ SCROLL ADD SMALL NAV
+  // END XỬ LÝ SCROLL ADD SMALL NAV
 
   // XỬ LÝ SLIDE QUOTES PHẦN PARNER TALK
   var slides = document.querySelector(".partner__group");
@@ -191,15 +192,15 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       productModal.classList.add("d-block");
       modalImg[i].classList.add("d-block");
-      if (i==modalImg.length-1) {
+      if (i == modalImg.length - 1) {
         prevImg.classList.remove("d-none");
-        nextImg.classList.add('d-none');
-      } else if (i==0) {
+        nextImg.classList.add("d-none");
+      } else if (i == 0) {
         nextImg.classList.remove("d-none");
-        prevImg.classList.add('d-none');
+        prevImg.classList.add("d-none");
       } else {
-          nextImg.classList.remove("d-none");
-          prevImg.classList.remove("d-none");
+        nextImg.classList.remove("d-none");
+        prevImg.classList.remove("d-none");
       }
     });
   }
@@ -218,12 +219,12 @@ document.addEventListener("DOMContentLoaded", function() {
       i++;
       modalImg[i].classList.add("d-block");
       // console.log(i);
-    } 
+    }
     // ẩn nút next khi cuối slide
-    if (i==modalImg.length-1) {
+    if (i == modalImg.length - 1) {
       prevImg.classList.remove("d-none");
-      nextImg.classList.add('d-none');
-    } 
+      nextImg.classList.add("d-none");
+    }
   });
   prevImg.addEventListener("click", () => {
     var activeModal = document.querySelector(".modal__img.d-block");
@@ -238,9 +239,9 @@ document.addEventListener("DOMContentLoaded", function() {
       // console.log(i);
     }
     // ẩn nút prev khi đầu slide
-    if (i==0) {
+    if (i == 0) {
       prevImg.classList.add("d-none");
-      nextImg.classList.remove('d-none');
+      nextImg.classList.remove("d-none");
     }
   });
   // END Xử lý nút Next và nút Prev
@@ -251,11 +252,30 @@ document.addEventListener("DOMContentLoaded", function() {
   var menuIcon = document.querySelector(".nav__icon");
   var menuBar = document.querySelector(".nav__bar");
   var closeBtn = document.querySelector(".nav__close");
+  var flag_menuIcon = "f";
   menuIcon.addEventListener("click", () => {
     menuBar.classList.toggle("nav-show");
   });
   closeBtn.addEventListener("click", () => {
     menuBar.classList.remove("nav-show");
+  });
+  // Đoạn dưới xử lý sự kiện khi scroll quá thanh menu thì nút icon menu sẽ fixed tại vị trí pos-fixed để ng dùng dễ bấm ,nút icon menu (position fixed) có opacity là 0.5, khi click vào đổi thành opacity 1
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= service.offsetTop) {
+      if (flag_menuIcon == "f") {
+        menuIcon.classList.add("pos-fixed");
+        var pos_fixed = document.querySelector(".pos-fixed");
+        pos_fixed.addEventListener("click", () => {
+          pos_fixed.classList.toggle("opacity-1");
+        });
+        flag_menuIcon = "t";
+      }
+    } else {
+      if (flag_menuIcon == "t") {
+        menuIcon.classList.remove("pos-fixed");
+        flag_menuIcon = "f";
+      }
+    }
   });
   // END XỬ LÝ NÚT ICON MENU KHI RESPONSIVE
 });

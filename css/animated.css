@@ -1246,7 +1246,7 @@
   -moz-animation-name: fadeInDown;
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fadeInLeft {

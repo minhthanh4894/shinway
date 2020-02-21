@@ -101,16 +101,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // END FadeInDown
 
     // FadeInDownBig
-    var fadeInDownBig = document.querySelectorAll(".fadeInDownBig");
-    for (let i = 0; i < fadeInDownBig.length; i++) {
-      var vt_fadeInDownBig = fadeInDownBig[i].offsetTop - 600;
+    var fadeInDownBig = document.querySelector(".fadeInDownBig");
+      var vt_fadeInDownBig = fadeInDownBig.offsetTop - 600;
       if (this.pageYOffset >= vt_fadeInDownBig) {
-        var delay_value = fadeInDownBig[i].getAttribute("data-animated-delay");
-        fadeInDownBig[i].style.animationDelay = `${delay_value}`;
-        fadeInDownBig[i].classList.remove("fadeInDownBig");
-        fadeInDownBig[i].classList.add("animated", "fadeInDownBig");
+        var delay_value = fadeInDownBig.getAttribute("data-animated-delay");
+        fadeInDownBig.style.animationDelay = `${delay_value}`;
+        fadeInDownBig.classList.remove("fadeInDownBig");
+        fadeInDownBig.classList.add("animated", "fadeInDownBig");
         // this.console.log(vt_fadeInDownBig);
-      }
     }
     // END FadeInDownBig
 
