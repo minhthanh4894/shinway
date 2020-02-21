@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var items = document.querySelectorAll(".partner__item");
   var prev = document.querySelector(".prev-btn");
   var next = document.querySelector(".next-btn");
-  var totalItems = items.length - 1; // Trừ 1 còn 3 là để do thứ tự item là 0-1-2-3
+  var totalItems = items.length - 1; // vd: Trừ 1 còn 3 là để do thứ tự item là 0-1-2-3
   // console.log(totalItems);
   let currentItem = 0; // Vị trí hiện tại của slide active
   // Xử lý nút next

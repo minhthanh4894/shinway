@@ -220,6 +220,11 @@ img {
     font-size: 1.4rem;
   }
 }
+@media screen and (max-width : 767px) {
+  .header {
+    background-attachment: initial;
+  }
+}
 
 @keyframes animatedBackground {
   0% {
@@ -868,7 +873,6 @@ img {
 .statistic {
   background-image: url(../images/bg-statistic.jpg);
   background-position: center;
-  background-size: cover;
   background-attachment: fixed;
   padding: 7rem 0;
 }
